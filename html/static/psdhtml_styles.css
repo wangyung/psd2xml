@@ -1,0 +1,134 @@
+* {
+    font-family: sans-serif;
+}
+
+html, body, div, img {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: white;
+}
+
+img {
+    border-width: 0;
+}
+
+#scroll-content, #toolbox {
+    position: absolute;
+    left: 0;
+    right: 0;
+}
+
+#toolbox {
+    top: 0;
+    background-color: black;
+    padding: 5px 10px;
+    z-index: 999;
+    font-size: 13px;
+    line-height: 16px;
+}
+
+#scroll-content {
+    top: 26px;
+    bottom: 0;
+    padding: 30px;
+    overflow: auto;
+}
+
+#toolbox .button {
+    cursor: pointer;
+    display: inline-block;
+    margin: 0 5px;
+}
+
+#toolbox .button, #toolbox .button a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+
+#toolbox .button:hover {
+    background-color: #555555;
+}
+
+#go-toc {
+    float: right;
+}
+
+#toc {
+    border-style: solid;
+    border-color: black;
+    border-width: 1px;
+    padding: 1em 1em 1em 2em;
+    background-color: #EEEEEE;
+}
+
+#toc-overview {
+    font-weight: bold;
+    font-size: 110%;
+}
+
+#content {
+    border-collapse: collapse;
+    border-spacing: 0;
+    width: 100%;
+}
+
+#content td {
+    border-style: solid;
+    border-color: black;
+    border-width: 1px;
+}
+
+.layer-image-container {
+    vertical-align: top;
+}
+
+.layer-canvas-header {
+    font-weight: bold;
+    padding: 0 5px;
+    line-height: 1.5em;
+    background-color: #A1F9F6;
+}
+
+.layer-canvas {
+    margin: 5px;
+    border-style: dotted;
+    border-color: blue;
+    border-width: 2px;
+    position: relative;
+}
+
+.background-overview {
+    opacity: 0.25;
+    filter: alpha(opacity=25);
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.background-grid {
+    background-image: url(psdhtml_grid.png);
+}
+
+.layer-canvas.background-grid .background-overview {
+    display: none;
+}
+
+.layer-no-image {
+    text-align: center;
+    line-height: 6em;
+}
+
+.layer-name {
+    font-weight: bold;
+    font-size: 110%;
+    margin-bottom: 1em;
+}
+
+.layer-properties dd {
+    margin: 0 0 0 1em;
+    font-weight: bold;
+}
